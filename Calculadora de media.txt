@@ -1,0 +1,41 @@
+package javaJava;
+
+import java.util.Scanner;
+
+	public class Main {
+		
+		public static void main(String[] args) {
+		
+		java.util.Scanner scn = new Scanner(System.in);
+		
+		
+			Float Nota1, Nota2, Nota3, Nota4, Resu;
+			String Nome;
+			
+		System.out.print(" - Informe seu nome : ");
+		Nome = scn.nextLine();
+			
+		System.out.print(" - Informe sua primeira nota : ");
+		Nota1 = scn.nextFloat();		
+		
+		System.out.print(" - Informe sua segunda nota : ");
+		Nota2 = scn.nextFloat();		
+	
+		System.out.print(" - Informe sua terceira nota : ");
+		Nota3 = scn.nextFloat();		
+		
+		System.out.print(" - Informe sua quarta nota : ");
+		Nota4 = scn.nextFloat();
+		scn.close(); 
+		
+		for ( int limpeza = 0; limpeza < 100; ++limpeza) { 
+			System.out.println();
+		}
+		 
+		Resu  = (Nota1 + Nota2 + Nota3 + Nota4) / 4;
+		
+		System.out.print(" - " + Nome + " sua media é " + Resu);
+
+	}
+
+}
